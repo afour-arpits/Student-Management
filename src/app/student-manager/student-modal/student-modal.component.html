@@ -1,0 +1,23 @@
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <table>
+      <tr>
+        <td>Roll Number : </td>
+        <td><input [(ngModel)] = "student.rollno" /></td>
+      </tr>
+      <tr>
+        <td>First Name : </td>
+        <td><input [(ngModel)] = "student.name" /></td>
+      </tr>
+      <tr>
+        <td>Last Name : </td>
+        <td><input [(ngModel)] = "student.lastName" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="submit-button" (click)="submitStudent()">Submit</button></td>
+      </tr>  
+    </table>
+  </div>
+</div>

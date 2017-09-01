@@ -1,0 +1,11 @@
+nav {
+    padding: 15px 30px;
+    background-color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 18px;
+    font-weight: bold;
+}

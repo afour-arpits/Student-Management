@@ -1,0 +1,19 @@
+<a class="create-new" routerLink="create" routerLinkActive="active">Create New Student</a>
+
+<table>
+  <tr>
+    <th>Roll Number</th>
+    <th>First Name</th>
+    <th>Last name</th>
+    <th colspan="2">Action</th>
+  </tr>
+  <tr *ngFor="let student of students | async">
+    <td>{{student.rollno}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.lastName}}</td>
+    <td><button [routerLink]="['update/' + student.$key ]">Edit</button></td>
+    <td><button (click)="deleteStudent(student.$key)">Delete</button></td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
